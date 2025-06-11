@@ -87,12 +87,10 @@ export type NavigationEntrySkeleton = {
 
 export type ComponentContentTypes =
   | TextComponentEntrySkeleton
-  | ImageComponentEntrySkeleton
   | ImageTextComponentEntrySkeleton
   | CarouselEntrySkeleton;
 
 export type ComponentEntry =
   | Entry<TextComponentEntrySkeleton, "WITHOUT_UNRESOLVABLE_LINKS", string>
-  | Entry<ImageComponentEntrySkeleton, "WITHOUT_UNRESOLVABLE_LINKS", string>
   | Entry<ImageTextComponentEntrySkeleton, "WITHOUT_UNRESOLVABLE_LINKS", string>
   | Entry<CarouselEntrySkeleton, "WITHOUT_UNRESOLVABLE_LINKS", string>;

@@ -30,7 +30,7 @@ export function HeroCarousel({ carousel }: HeroCarouselProps) {
             <p className="mt-6 max-w-[60ch] xs:text-lg text-muted-foreground">
               Discover innovative solutions and expert guidance to make your
               home improvement projects a success. From DIY tips to professional
-              services, we've got you covered.
+              services, we&apos;ve got you covered.
             </p>
           </div>
           <div className="relative lg:max-w-lg xl:max-w-xl w-full bg-accent rounded-xl aspect-square">
