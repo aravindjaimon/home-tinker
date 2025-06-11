@@ -39,6 +39,8 @@ export function HeroCarousel({ carousel }: HeroCarouselProps) {
               fill
               alt="HomeTinker Hero Image"
               className="object-cover rounded-xl"
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
         </div>
@@ -90,6 +92,8 @@ export function HeroCarousel({ carousel }: HeroCarouselProps) {
                           : `Hero Image ${index + 1}`
                       }
                       className="object-cover rounded-xl"
+                      priority={index === 0}
+                      sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                   </div>
                 </div>

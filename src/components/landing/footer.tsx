@@ -37,6 +37,7 @@ export async function Footer() {
                 key={socialLink.platform}
                 href={socialLink.url}
                 className="text-muted-foreground hover:text-foreground transition-colors"
+                aria-label={socialLink.platform}
               >
                 {socialIcons[socialLink.platform] ||
                   socialIcons[socialLink.platform.toLowerCase()]}
@@ -48,13 +49,14 @@ export async function Footer() {
         {/* Custom Footer Links from Contentful */}
         {footerData.footerLinks.length > 0 && (
           <div className="flex-shrink-0">
-            <h6 className="font-semibold text-foreground">More</h6>
+            <h3 className="text-xl font-semibold text-foreground">More</h3>
             <ul className="mt-6 space-y-4">
               {footerData.footerLinks.map((footerLink) => (
                 <li key={footerLink.title}>
                   <Link
                     href={footerLink.url}
                     className="text-muted-foreground hover:text-foreground transition-colors"
+                    aria-label={footerLink.title}
                   >
                     {footerLink.title}
                   </Link>

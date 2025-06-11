@@ -22,6 +22,7 @@ export async function Navigation() {
                 key={link.slug}
                 href={link.slug === "home" ? "/" : `/${link.slug}`}
                 className="text-muted-foreground hover:text-foreground transition-colors"
+                aria-label={link.title}
               >
                 {link.title}
               </Link>
@@ -45,6 +46,7 @@ export async function Navigation() {
                       key={link.slug}
                       href={link.slug === "home" ? "/" : `/${link.slug}`}
                       className="text-muted-foreground hover:text-foreground transition-colors py-2"
+                      aria-label={link.title}
                     >
                       {link.title}
                     </Link>
