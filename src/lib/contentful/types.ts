@@ -53,16 +53,6 @@ export type TextComponentEntrySkeleton = {
   };
 };
 
-export type ImageComponentEntrySkeleton = {
-  contentTypeId: "imageComponent";
-  fields: {
-    image: EntryFieldTypes.AssetLink;
-    altText: EntryFieldTypes.Symbol;
-    caption?: EntryFieldTypes.Symbol;
-    size?: EntryFieldTypes.Symbol<"small" | "medium" | "large" | "full">;
-  };
-};
-
 export type ImageTextComponentEntrySkeleton = {
   contentTypeId: "imageTextComponent";
   fields: {

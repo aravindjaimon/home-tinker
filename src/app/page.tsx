@@ -1,6 +1,8 @@
 import { Footer } from "@/components/landing/footer";
 import { Hero } from "@/components/landing/hero";
+import { ImageTextSection } from "@/components/landing/image-text-section";
 import { Navigation } from "@/components/landing/navigation";
+import { TextSection } from "@/components/landing/text-section";
 import type { Metadata } from "next";
 
 // Enable static generation and set revalidation
@@ -38,6 +40,8 @@ export default async function HomePage() {
     <>
       <Navigation />
       <Hero />
+      <TextSection />
+      <ImageTextSection />
       <Footer />
     </>
   );
