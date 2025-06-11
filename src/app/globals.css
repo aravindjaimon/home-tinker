@@ -41,6 +41,9 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  /* Custom breakpoints */
+  --breakpoint-xs: 475px;
 }
 
 :root {
@@ -119,4 +122,60 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Custom responsive utility classes */
+@layer utilities {
+  .xs\:text-4xl {
+    @media (min-width: 475px) {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  .xs\:text-lg {
+    @media (min-width: 475px) {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+  }
+
+  .xs\:mt-14 {
+    @media (min-width: 475px) {
+      margin-top: 3.5rem;
+    }
+  }
+
+  .xs\:py-20 {
+    @media (min-width: 475px) {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+
+  .xs\:inline-flex {
+    @media (min-width: 475px) {
+      display: inline-flex;
+    }
+  }
+
+  .xs\:mt-20 {
+    @media (min-width: 475px) {
+      margin-top: 5rem;
+    }
+  }
+}
+
+/* Embla Carousel Styles */
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
 }

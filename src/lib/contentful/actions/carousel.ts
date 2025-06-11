@@ -8,7 +8,8 @@ export async function getCarousel(title?: string) {
     const entries = await client.getEntries<CarouselEntrySkeleton>({
       content_type: "carousel",
       limit: 1,
-      ...(title && { fields: { title } }),
+      include: 10,
+      ...(title && { "fields.title": title }),
     });
 
     if (!entries.items[0]) {
@@ -39,6 +40,7 @@ export async function getAllCarousels() {
   try {
     const entries = await client.getEntries<CarouselEntrySkeleton>({
       content_type: "carousel",
+      include: 10,
     });
 
     return entries.items.map((entry) => ({
