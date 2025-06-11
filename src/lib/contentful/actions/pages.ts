@@ -22,7 +22,6 @@ export async function getPage(slug: string) {
       slug: entry.fields.slug,
       metaTitle: entry.fields.metaTitle,
       metaDescription: entry.fields.metaDescription,
-      sections: entry.fields.sections || [],
     };
   } catch (error) {
     console.error("Error fetching page:", error);
