@@ -1,5 +1,15 @@
 import { Entry, EntryFieldTypes } from "contentful";
 
+export type SocialLink = {
+  url: string;
+  platform: string;
+};
+
+export type FooterLink = {
+  url: string;
+  title: string;
+};
+
 export type PageEntrySkeleton = {
   contentTypeId: "page";
   fields: {
@@ -71,8 +81,8 @@ export type FooterEntrySkeleton = {
     companyDescription?: EntryFieldTypes.Symbol;
     contactEmail?: EntryFieldTypes.Symbol;
     contactPhone?: EntryFieldTypes.Symbol;
-    socialLinks?: EntryFieldTypes.Object;
-    footerLinks?: EntryFieldTypes.Object;
+    socialLinks?: SocialLink[];
+    footerLinks?: FooterLink[];
     copyright: EntryFieldTypes.Symbol;
   };
 };
