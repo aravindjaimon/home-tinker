@@ -23,13 +23,13 @@ export default async function NotFound() {
               404 - Not Found
             </CardTitle>
             <CardDescription className="text-muted-foreground pt-2">
-              Oops! The page you're looking for could not be found.
+              Oops! The page you&apos;re looking for could not be found.
             </CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-center text-muted-foreground text-sm">
-              It seems you've followed a broken link or entered a URL that
-              doesn't exist on this site.
+              It seems you&apos;ve followed a broken link or entered a URL that
+              doesn&apos;t exist on this site.
             </p>
           </CardContent>
           <CardFooter className="flex justify-center">
